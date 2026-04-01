@@ -5,3 +5,6 @@ Bringing Cool UIs to Life with Jetpack Compose
 ![](https://github.com/bawantha/composifi/blob/main/resources/tiktok.gif)
 #2 Bouncing Dots Loading Animation
 ![](https://github.com/bawantha/composifi/blob/main/resources/bouncing_dots.gif)
+
+#3 Pulse Animation
+This animation demonstrates a pulse effect with fading alpha and increasing radius.
