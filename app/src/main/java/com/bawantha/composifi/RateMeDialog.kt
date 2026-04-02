@@ -15,6 +15,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -34,12 +36,15 @@ fun RateMeDialog(
             color = MaterialTheme.colorScheme.surface,
             tonalElevation = 8.dp
         ) {
-            Column(
-                modifier = Modifier
-                    .padding(24.dp)
-                    .fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+            Box(modifier = Modifier.fillMaxWidth()) {
+                FloatingHeartsAnimation(modifier = Modifier.matchParentSize())
+
+                Column(
+                    modifier = Modifier
+                        .padding(24.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                 // Attach the Pulse Animation here
                 PulseAnimation(
                     pulseRadius = 60f,
@@ -65,15 +70,16 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(24.dp))
 
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly
-                ) {
-                    Button(onClick = onLaterClick) {
-                        Text("Later")
-                    }
-                    Button(onClick = onRateNowClick) {
-                        Text("Rate Now")
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceEvenly
+                    ) {
+                        Button(onClick = onLaterClick) {
+                            Text("Later")
+                        }
+                        Button(onClick = onRateNowClick) {
+                            Text("Rate Now")
+                        }
                     }
                 }
             }
