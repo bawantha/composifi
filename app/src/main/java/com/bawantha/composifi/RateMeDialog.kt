@@ -40,9 +40,8 @@ fun RateMeDialog(
                     .fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Attach the Pulse Animation here
-                PulseAnimation(
-                    pulseRadius = 60f,
+                // Attach the Cool Star Animation here
+                CoolStarAnimation(
                     modifier = Modifier.padding(16.dp)
                 )
 
