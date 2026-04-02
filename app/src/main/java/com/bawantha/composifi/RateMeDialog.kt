@@ -40,9 +40,8 @@ fun RateMeDialog(
                     .fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Attach the Pulse Animation here
-                PulseAnimation(
-                    pulseRadius = 60f,
+                // Attach the Floating Hearts Animation here
+                FloatingHeartsAnimation(
                     modifier = Modifier.padding(16.dp)
                 )
 
