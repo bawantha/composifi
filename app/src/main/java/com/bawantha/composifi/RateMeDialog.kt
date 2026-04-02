@@ -40,8 +40,8 @@ fun RateMeDialog(
                     .fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                // Attach the Pulse Animation here
-                PulseAnimation(
+                // Attach the Shimmering Star Animation here
+                ShimmeringStarAnimation(
                     pulseRadius = 60f,
                     modifier = Modifier.padding(16.dp)
                 )
