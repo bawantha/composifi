@@ -11,3 +11,10 @@ This animation demonstrates a pulse effect with fading alpha and increasing radi
 
 #4 Shimmering Star Animation
 This animation combines an animated gradient sweep (shimmer) over a path with scaling and rotating elements to create an impressive shimmering star effect built natively in Jetpack Compose.
+
+[Screen_recording_20260402_154738.webm](https://github.com/user-attachments/assets/46ec1495-85b4-4629-8260-b2def55dd7ad)
+
+
+#Floating Heart
+
+[Screen_recording_20260403_152745.webm](https://github.com/user-attachments/assets/b5346bcd-fb27-4f9e-99b9-039595c680ad)
