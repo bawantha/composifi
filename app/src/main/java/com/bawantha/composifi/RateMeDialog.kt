@@ -35,6 +35,8 @@ fun RateMeDialog(
             color = MaterialTheme.colorScheme.surface,
             tonalElevation = 8.dp
         ) {
+            androidx.compose.foundation.layout.Box(modifier = Modifier.fillMaxWidth()) {
+                ConfettiAnimation(modifier = Modifier.matchParentSize())
             Column(
                 modifier = Modifier
                     .padding(24.dp)
@@ -85,6 +87,7 @@ fun RateMeDialog(
                         Text("Rate Now")
                     }
                 }
+            }
             }
         }
     }
