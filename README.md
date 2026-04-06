@@ -18,3 +18,10 @@ This animation combines an animated gradient sweep (shimmer) over a path with sc
 #Floating Heart
 
 [Screen_recording_20260403_152745.webm](https://github.com/user-attachments/assets/b5346bcd-fb27-4f9e-99b9-039595c680ad)
+
+
+
+
+
+https://github.com/user-attachments/assets/8b166cf6-0194-44c5-aee9-e7ce241854a9
+
