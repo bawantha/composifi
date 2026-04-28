@@ -67,6 +67,10 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                ParticleTornadoAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 PlasmaWaveAnimation(modifier = Modifier.fillMaxWidth().height(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
