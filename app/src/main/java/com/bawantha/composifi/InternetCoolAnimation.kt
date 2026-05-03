@@ -41,7 +41,8 @@ fun InternetCoolAnimation(modifier: Modifier = Modifier) {
         val centerY = height / 2f
         val radius = size.minDimension * 0.4f
 
-        val points = 100
+        val points = 300
+        val rotations = 8f
         val colors = listOf(
             Color(0xFFFF007F), // Neon Pink
             Color(0xFF00F0FF), // Neon Cyan
@@ -51,15 +52,27 @@ fun InternetCoolAnimation(modifier: Modifier = Modifier) {
 
         for (i in 0 until 4) {
             val color = colors[i % colors.size]
-            val phaseOffset = i * (PI / 2).toFloat()
+            val phaseOffset = i * (PI / 4).toFloat()
 
             path.reset()
             for (j in 0..points) {
-                val t = (j.toFloat() / points) * 2f * PI.toFloat()
+                val t = (j.toFloat() / points) * rotations * 2f * PI.toFloat()
 
-                // Infinity-like parametric curve (Lissajous)
-                val x = centerX + radius * sin(t + time * 2f + phaseOffset) * cos(t)
-                val y = centerY + radius * sin(2f * t + time * 3f + phaseOffset) * 0.8f
+                // Dynamic Morphing Rose Curve / Mathematical Parametric Pattern
+                val n = 4f + sin(time * 0.8f) * 2f
+                val d = 3f + cos(time * 0.5f) * 1.5f
+                val k = n / d
+
+                // Calculate changing radius based on the math formula
+                val rMath = radius * sin(k * t + time * 1.5f)
+
+                // Add a secondary perturbation for extra "coolness"
+                val rPerturb = radius * 0.2f * cos(5f * t - time * 2f)
+
+                val r = rMath + rPerturb
+
+                val x = centerX + r * cos(t + time * 0.3f + phaseOffset)
+                val y = centerY + r * sin(t + time * 0.3f + phaseOffset)
 
                 if (j == 0) {
                     path.moveTo(x.toFloat(), y.toFloat())
@@ -72,10 +85,10 @@ fun InternetCoolAnimation(modifier: Modifier = Modifier) {
                 path = path,
                 color = color,
                 style = Stroke(
-                    width = 4f + (sin(time * 5f + phaseOffset).toFloat() + 1f) * 2f,
+                    width = 3f + (sin(time * 3f + phaseOffset).toFloat() + 1f) * 1.5f,
                     cap = StrokeCap.Round
                 ),
-                alpha = 0.8f
+                alpha = 0.85f
             )
         }
     }

@@ -43,6 +43,11 @@ fun RateMeDialog(
                     .fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                // Attach the Internet Cool Animation here
+                InternetCoolAnimation(modifier = Modifier.size(120.dp).padding(16.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 // Attach the Shimmering Star Animation here
                 ShimmeringStarAnimation(
                     pulseRadius = 60f,
@@ -60,10 +65,6 @@ fun RateMeDialog(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 LiquidWaveAnimation(modifier = Modifier.fillMaxWidth().height(100.dp))
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                InternetCoolAnimation(modifier = Modifier.size(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
 
