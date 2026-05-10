@@ -67,6 +67,10 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                InfinityLoopAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 ParticleTornadoAnimation(modifier = Modifier.size(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
