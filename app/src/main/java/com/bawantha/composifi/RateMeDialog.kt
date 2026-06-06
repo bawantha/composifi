@@ -155,6 +155,10 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                MetaballAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 KaleidoscopeAnimation(modifier = Modifier.size(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
