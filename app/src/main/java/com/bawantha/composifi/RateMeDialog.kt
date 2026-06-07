@@ -68,6 +68,16 @@ fun RateMeDialog(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 InternetCoolAnimation(modifier = Modifier.size(100.dp))
+                Spacer(modifier = Modifier.height(16.dp))
+
+                GlowingOrbAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                SolarSystemAnimation(modifier = Modifier.size(100.dp))
+                Spacer(modifier = Modifier.height(16.dp))
+
+                NeonPulsingRingsAnimation(modifier = Modifier.size(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
 
