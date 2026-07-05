@@ -71,6 +71,10 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                FibonacciSphereAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 QuantumTunnelAnimation(modifier = Modifier.size(100.dp))
 
                 Spacer(modifier = Modifier.height(16.dp))
