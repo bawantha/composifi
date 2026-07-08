@@ -171,6 +171,10 @@ fun RateMeDialog(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+                TorusKnotAnimation(modifier = Modifier.size(100.dp))
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 Text(
                     text = "Enjoying the App?",
                     style = MaterialTheme.typography.titleLarge,
