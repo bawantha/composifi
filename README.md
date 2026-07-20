@@ -25,6 +25,9 @@ This animation combines an animated gradient sweep (shimmer) over a path with sc
 
 https://github.com/user-attachments/assets/8b166cf6-0194-44c5-aee9-e7ce241854a9
 
+#Fractal Tree
+A beautiful fractal tree animation that sways naturally in the wind, demonstrating recursive drawing and parametric motion in Jetpack Compose Canvas.
+
 
 #Atom
 
